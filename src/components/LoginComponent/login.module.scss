@@ -1,0 +1,58 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 10px;
+  // background-color: #00a895;
+    
+    .form {
+        background: #e0f7fa;
+        padding: 20px 40px 30px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+      }
+
+    /* Input field styling */
+.inputHeader {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .inputHeader label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .inputHeader input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Register button styling */
+  .loginButton {
+    width: 100%;
+    background-color: #00a895;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .loginButton:hover {
+    background-color: #006459;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+}
+

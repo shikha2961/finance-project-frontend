@@ -1,0 +1,99 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:baseline;
+    height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, #4ca1af);
+    color: white;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00796b; /* Light bluish text */
+}
+
+.wrapper p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #00796b; /* Soft blue text */
+}
+
+.accountform {
+    background-color: #00796b;
+    padding: 27px;
+    border-radius: 12px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Form labels */
+.accountform label {
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #dbe9f6; /* Light text */
+}
+/* Input fields */
+.accountform input{
+    width: 94%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.accountform select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.accountform select option {
+    background: #00796b;
+    color: white;
+}
+.accountform input::placeholder {
+    color: #d0e1f9;
+}
+
+/* Dropdown select */
+.accountform select {
+    cursor: pointer;
+}
+
+/* Create Account Button */
+.accountform button {
+    background-color: #4ca1af; /* Bluish green */
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.accountform button:hover {
+    background-color: #3a8a96;
+    transform: scale(1.05);
+}

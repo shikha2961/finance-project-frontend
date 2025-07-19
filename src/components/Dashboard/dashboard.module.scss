@@ -1,0 +1,195 @@
+:global(body) {
+    background: linear-gradient(to right bottom, #f5f9f8, #e0f2f1, #b2dfdb);
+    margin: 0;
+    min-height: 100vh;
+  }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
+    /* Light blue background */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.balanceCard, .incomeCard, .expenseCard {
+    width: 30%;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #ffffff; /* White text color */
+}
+
+.balanceCard {
+    background-color: #5DADE2;
+}
+
+.incomeCard {
+    background-color: #2ECC71;
+}
+
+.expenseCard {
+    background-color: #FF6B6B;
+}
+
+
+.balanceCard:hover, .incomeCard:hover, .expenseCard:hover {
+    transform: scale(1.05);
+}
+
+.cardButton{
+    padding: 20px;
+    margin: 10px;
+}
+
+.incomeButton, .expenseButton{
+    width: 100%;
+    background-color: #0ebba7;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.incomeButton:hover, .expenseButton:hover {
+    background-color: #004d40;
+}
+
+.chartsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.chart {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+}
+
+// Make charts responsive
+@media (max-width: 768px) {
+    .chart {
+        flex: 1 1 100%;
+    }
+}
+
+// ... existing styles ...
+.reportContainer {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 210mm; // A4 width
+    background: white;
+    padding: 20mm;
+  }
+  
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    margin-top: 20px;
+    
+  h2 {
+    font-size: 2rem;
+    color: #00796b;
+    margin: 0;
+    position: relative;
+    padding-bottom: 10px;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60%;
+      height: 3px;
+      background: linear-gradient(to right, #00796b, transparent);
+    }
+
+    // Optional animation on page load
+    animation: slideIn 0.5s ease-out;
+  }
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .downloadButton {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: darken(#00796b, 10%);
+      transform: translateY(-1px);
+    }
+  
+    &:active {
+      transform: translateY(0);
+    }
+  
+    &::before {
+      content: '📥';
+      font-size: 1.2em;
+    }
+  }
+  .footer{
+    margin-top: 50px;
+    text-align: center;
+    padding: 40px;
+    background-color: #00796b;
+    color: #dce6f2;
+}
+// .button {
+//     width: 100%;
+//     padding: 20px;
+//     margin: 20px;
+//     border: none;
+//     border-radius: 10px;
+//     background-color: #01579b; /* Darker blue color */
+//     color: #ffffff; /* White text color */
+//     font-size: 18px;
+//     cursor: pointer;
+//     transition: background-color 0.3s;
+// }
+
+// .button:hover {
+//     background-color: #0277bd; /* Slightly lighter blue on hover */
+// }

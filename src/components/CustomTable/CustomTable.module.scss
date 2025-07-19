@@ -1,0 +1,80 @@
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 14px;
+
+    thead {
+        background-color: #f8f9fa;
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #495057;
+            border-bottom: 2px solid #dee2e6;
+            white-space: nowrap;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+
+            &:hover {
+                background-color: #f2f2f2;
+                transition: background-color 0.3s ease;
+            }
+
+            td {
+                padding: 12px 15px;
+                border-bottom: 1px solid #dee2e6;
+                color: #6c757d;
+
+                &:first-child {
+                    font-weight: 500;
+                    color: #495057;
+                }
+            }
+        }
+    }
+}
+
+// Styling for transaction types
+.credit {
+    color: #28a745 !important;
+    font-weight: 500;
+}
+
+.debit {
+    color: #dc3545 !important;
+    font-weight: 500;
+}
+
+// Loading state
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+
+// Responsive design
+@media screen and (max-width: 768px) {
+    .table {
+        font-size: 13px;
+
+        thead th, tbody td {
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e0f2f1;
+    padding: 10px;
+    border-radius: 12px;
+    width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  
+    // Custom scrollbar
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #00796b;
+      border-radius: 4px;
+    }
+  }
+  
+  // Add styles for the overlay (react-modal creates this automatically)
+  :global(.ReactModal__Overlay) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    z-index: 1000;
+  }
+  
+  // Add animations
+  :global(.ReactModal__Content) {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+    transition: all 300ms ease-in-out;
+  }
+  
+  :global(.ReactModal__Content--after-open) {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  
+  :global(.ReactModal__Content--before-close) {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  
+  // Responsive styles
+  @media screen and (max-width: 900px) {
+    .modal {
+      width: 95%;
+      margin: 20px;
+      padding: 20px;
+    }
+  }
