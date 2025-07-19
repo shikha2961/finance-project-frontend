@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/finance-project-frontend/static/css/main.9d85c74a.css",
+    "main.js": "/finance-project-frontend/static/js/main.1206041c.js",
+    "static/js/213.717dd83a.chunk.js": "/finance-project-frontend/static/js/213.717dd83a.chunk.js",
+    "static/js/455.c07b4d54.chunk.js": "/finance-project-frontend/static/js/455.c07b4d54.chunk.js",
+    "static/js/488.65c79b19.chunk.js": "/finance-project-frontend/static/js/488.65c79b19.chunk.js",
+    "index.html": "/finance-project-frontend/index.html",
+    "main.9d85c74a.css.map": "/finance-project-frontend/static/css/main.9d85c74a.css.map",
+    "main.1206041c.js.map": "/finance-project-frontend/static/js/main.1206041c.js.map",
+    "213.717dd83a.chunk.js.map": "/finance-project-frontend/static/js/213.717dd83a.chunk.js.map",
+    "455.c07b4d54.chunk.js.map": "/finance-project-frontend/static/js/455.c07b4d54.chunk.js.map",
+    "488.65c79b19.chunk.js.map": "/finance-project-frontend/static/js/488.65c79b19.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d85c74a.css",
+    "static/js/main.1206041c.js"
+  ]
+}
